@@ -1,21 +1,34 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("multiplatform") apply false
+    kotlin("jvm") apply false
 }
+
+val javaVersion: String by project
 
 group = "ru.otus.otuskotlin.marketplace"
 version = "1.0.0-SNAPSHOT"
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+        gradlePluginPortal()
+    }
+}
 
 subprojects {
     group = rootProject.group
     version = rootProject.version
-    repositories {
-        mavenCentral()
-    }
+
     tasks.withType<KotlinCompile> {
-        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.jvmTarget = javaVersion
+    }
+    tasks.withType<KotlinJvmCompile> {
+        kotlinOptions.jvmTarget = javaVersion
     }
 }
 
