@@ -1,5 +1,4 @@
-
-rootProject.name = "okmarketplace-2023"
+rootProject.name = "otus_tinder_lukiniv"
 
 pluginManagement {
     val kotlinVersion: String by settings
