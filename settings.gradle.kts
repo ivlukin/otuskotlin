@@ -10,5 +10,6 @@ pluginManagement {
     }
 }
 
-include("m1l1-quickstart")
+
+include("server")
 
