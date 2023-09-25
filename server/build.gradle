@@ -1,6 +1,0 @@
-
-val postgresql_version: String by project
-
-dependencies {
-    implementation("org.postgresql:postgresql:$postgresql_version")
-}

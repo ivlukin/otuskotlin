@@ -10,6 +10,4 @@ pluginManagement {
     }
 }
 
-
 include("server")
-
