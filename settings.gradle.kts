@@ -11,3 +11,4 @@ pluginManagement {
 }
 
 include("server")
+include("database")
