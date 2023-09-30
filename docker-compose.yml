@@ -1,13 +1,13 @@
 services:
-  server:
-    build: server/
-    ports:
-      - "8080:8080"
-    depends_on:
-      db:
-        condition: service_healthy
-    volumes:
-      - /apps/otustinder/server:/opt/server
+#  server:
+#    build: server/
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      db:
+#        condition: service_healthy
+#    volumes:
+#      - /apps/otustinder/server:/opt/server
   database:
     image: postgres
     volumes:
