@@ -1,9 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
+
 plugins {
-    kotlin("multiplatform") apply false
-    kotlin("jvm") apply false
+    kotlin("jvm")
 }
 
 val javaVersion: String by project
