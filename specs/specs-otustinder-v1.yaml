@@ -283,7 +283,7 @@ components:
         - $ref: '#/components/schemas/ProfileRequestDebug'
         - type: object
           properties:
-            ad:
+            profile:
               $ref: '#/components/schemas/ProfileCreateObject'
 
     ProfileReadObject:
@@ -299,7 +299,7 @@ components:
         - $ref: '#/components/schemas/ProfileRequestDebug'
         - type: object
           properties:
-            ad:
+            profile:
               $ref: '#/components/schemas/ProfileReadObject'
 
     ProfileUpdateObject:
@@ -318,7 +318,7 @@ components:
         - $ref: '#/components/schemas/ProfileRequestDebug'
         - type: object
           properties:
-            ad:
+            profile:
               $ref: '#/components/schemas/ProfileUpdateObject'
 
     ProfileDeleteObject:
@@ -336,7 +336,7 @@ components:
         - $ref: '#/components/schemas/ProfileRequestDebug'
         - type: object
           properties:
-            ad:
+            profile:
               $ref: '#/components/schemas/ProfileDeleteObject'
 
 
