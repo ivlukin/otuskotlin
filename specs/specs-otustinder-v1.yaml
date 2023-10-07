@@ -386,7 +386,7 @@ components:
         - type: object
           description: пара
           properties:
-            result:
+            isMatch:
               type: boolean
             match:
                 $ref: '#/components/schemas/Match'

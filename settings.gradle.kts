@@ -10,6 +10,7 @@ pluginManagement {
     val pluginShadow: String by settings
     val ktorVersion: String by settings
     val bmuschkoVersion: String by settings
+    val openApiVersion: String by settings
 
     plugins {
         kotlin("jvm") version kotlinVersion
@@ -21,6 +22,7 @@ pluginManagement {
         kotlin("plugin.spring") version pluginSpringVersion apply false
         kotlin("plugin.jpa") version pluginJpa apply false
         id("com.bmuschko.docker-spring-boot-application") version bmuschkoVersion apply false
+        id("org.openapi.generator") version openapiVersion apply false
 
         id("io.ktor.plugin") version ktorVersion apply false
     }
@@ -28,5 +30,4 @@ pluginManagement {
 
 }
 
-include("server")
-include("database")
+include("model")
