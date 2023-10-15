@@ -7,10 +7,8 @@ pluginManagement {
     val springDependencyManagementVersion: String by settings
     val pluginSpringVersion: String by settings
     val pluginJpa: String by settings
-    val pluginShadow: String by settings
     val ktorVersion: String by settings
     val bmuschkoVersion: String by settings
-    val openApiVersion: String by settings
 
     plugins {
         kotlin("jvm") version kotlinVersion
@@ -31,3 +29,4 @@ pluginManagement {
 }
 
 include("model")
+include("otustinder-common")

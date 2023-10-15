@@ -262,10 +262,10 @@ components:
       description: сущность пара (пользователь-пользователь)
       properties:
         FirstUser:
-          type: integer
+          type: string
           description: id первого пользователя
         SecondUser:
-          type: integer
+          type: string
           description: id второго пользователя
 
 
@@ -482,7 +482,6 @@ components:
         - success
         - notFound
         - badId
-        - badTitle
         - badDescription
         - badInfo
         - cannotDelete
