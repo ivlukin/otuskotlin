@@ -16,5 +16,12 @@ kotlin {
                 api("org.jetbrains.kotlinx:kotlinx-datetime:$datetimeVersion")
             }
         }
+
+        val test by getting {
+            dependencies {
+                implementation(kotlin("test-common"))
+                implementation(kotlin("test-annotations-common"))
+            }
+        }
     }
 }

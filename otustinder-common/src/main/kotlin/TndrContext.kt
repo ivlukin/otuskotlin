@@ -2,6 +2,7 @@ package ru.otus.otustinder.common
 
 import kotlinx.datetime.Instant
 import ru.otus.otustinder.common.models.*
+import ru.otus.otustinder.common.stubs.TndrStubs
 
 data class TndrContext(
     var command: TndrCommand = TndrCommand.NONE,
@@ -9,6 +10,7 @@ data class TndrContext(
     val errors: MutableList<TndrError> = mutableListOf(),
 
     var workMode: TndrWorkMode = TndrWorkMode.PROD,
+    var stubCase: TndrStubs = TndrStubs.NONE,
 
 
     var requestId: TndrRequestId = TndrRequestId.NONE,

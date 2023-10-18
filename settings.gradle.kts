@@ -30,3 +30,4 @@ pluginManagement {
 
 include("model")
 include("otustinder-common")
+include("otustinder-mappers")

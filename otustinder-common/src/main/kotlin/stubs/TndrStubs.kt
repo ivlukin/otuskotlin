@@ -1,4 +1,4 @@
-package ru.otus.otuskotlin.marketplace.common.stubs
+package ru.otus.otustinder.common.stubs
 
 enum class TndrStubs {
     NONE,

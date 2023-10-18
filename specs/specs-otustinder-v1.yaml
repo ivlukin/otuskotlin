@@ -344,24 +344,27 @@ components:
       allOf:
         - $ref: '#/components/schemas/IRequest'
         - $ref: '#/components/schemas/ProfileRequestDebug'
-        - properties:
-            id:
-              $ref: '#/components/schemas/ProfileUpdateObject'
+        - type: object
+          properties:
+            profileId:
+              $ref: '#/components/schemas/ProfileId'
 
     ProfileLikeRequest:
       allOf:
         - $ref: '#/components/schemas/IRequest'
         - $ref: '#/components/schemas/ProfileRequestDebug'
-        - properties:
-            id:
-              $ref: '#/components/schemas/ProfileUpdateObject'
+        - type: object
+          properties:
+            profileId:
+              $ref: '#/components/schemas/ProfileId'
 
     ProfileMatchesRequest:
       allOf:
         - $ref: '#/components/schemas/IRequest'
         - $ref: '#/components/schemas/ProfileRequestDebug'
-        - properties:
-            id:
+        - type: object
+          properties:
+            profileId:
               $ref: '#/components/schemas/ProfileId'
 
     ProfileResponseObject:
@@ -374,11 +377,6 @@ components:
               $ref: '#/components/schemas/ProfileId'
             lock:
               $ref: '#/components/schemas/ProfileLock'
-            permissions:
-              type: array
-              uniqueItems: true
-              items:
-                $ref: '#/components/schemas/ProfilePermissions'
 
     MatchResponseObject:
       allOf:
@@ -390,14 +388,6 @@ components:
               type: boolean
             match:
                 $ref: '#/components/schemas/Match'
-
-    ProfilePermissions:
-      type: string
-      description: Доступы для клиента для операций над профилем
-      enum:
-        - read
-        - update
-        - delete
 
     ProfileResponseSingle:
       allOf:
@@ -482,6 +472,6 @@ components:
         - success
         - notFound
         - badId
-        - badDescription
         - badInfo
         - cannotDelete
+        - dbError

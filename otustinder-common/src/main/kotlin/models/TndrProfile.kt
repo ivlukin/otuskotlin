@@ -11,7 +11,8 @@ data class TndrProfile(
 
     val info: List<TndrUserAttribute> = emptyList(),
     val addInfo: List<TndrUserAttribute> = emptyList(),
-    val matches: List<TndrMatch> = emptyList()
+    val matches: List<TndrMatch> = emptyList(),
+    val likes: List<TndrProfileId> = emptyList()
 
 ) {
     fun isEmpty() = this == NONE
