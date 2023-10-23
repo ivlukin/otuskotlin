@@ -25,15 +25,12 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive:${coroutinesVersion}")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$serializationVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
+
+    // api, transport models
     implementation(project(":otustinder-app-common"))
-
-
-    // transport models
-//    implementation(project(":otustinder-common"))
-
-    // api
-//    implementation(project(":model"))
-//    implementation(project(":otustinder-mappers"))
+    implementation(project(":model"))
+    implementation(project(":otustinder-mappers"))
+    implementation(project(":otustinder-common"))
 
 
     // tests
