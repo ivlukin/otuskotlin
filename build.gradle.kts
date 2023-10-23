@@ -8,7 +8,7 @@ plugins {
 
 val javaVersion: String by project
 
-group = "ru.otus.otuskotlin.marketplace"
+group = "ru.otus.otustinder"
 version = "1.0.0-SNAPSHOT"
 
 allprojects {
