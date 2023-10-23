@@ -17,7 +17,7 @@ dependencies {
     implementation(project(":otustinder-common"))
 
      //api
-    implementation(project(":model"))
+    implementation(project(":otustinder-model"))
     implementation(project(":otustinder-mappers"))
 
 }
