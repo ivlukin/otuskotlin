@@ -30,3 +30,5 @@ pluginManagement {
 
 include("server")
 include("database")
+include("otustinder-app-spring")
+include("otustinder-app-common")
