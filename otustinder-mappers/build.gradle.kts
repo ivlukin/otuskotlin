@@ -8,7 +8,7 @@ version = rootProject.version
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(project(":otustinder-common"))
-    implementation(project(":model"))
+    implementation(project(":otustinder-model"))
 
     testImplementation(kotlin("test-junit"))
 }

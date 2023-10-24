@@ -28,6 +28,8 @@ pluginManagement {
 
 }
 
-include("model")
+include("otustinder-model")
 include("otustinder-common")
 include("otustinder-mappers")
+include("otustinder-app-spring")
+include("otustinder-app-common")
